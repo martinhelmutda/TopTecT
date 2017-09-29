@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Morelia</title>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.css">
+    <script
+            src="dist/jquery-3.2.1.js">
+    </script>
+    <script src="dist/semantic.js"></script>
+    .pusher{
+    margin-top: 70px auto 0;
+    }
+
+</head>
+<body>
+
+    <div class="ui sidebar vertical left inverted menu">
+        <a href="index.html" class="item">Inicio</a>
+        <a href="campus-site.html" class="header item"><i class="grid layout icon"></i>Campus
+            <div class="menu">
+                <a href="queretaro.html" class="item">Campus Querétaro</a>
+                <a href="morelia.html" class="active item">Campus Morelia</a>
+                <a href="hidalgo.html" class="item">Campus Hidalgo</a>
+                <a href="ccm.html" class="item">Campus Ciudad México</a>
+                <a href="guadalajara.html" class="item">Campus Guadalajara</a>
+            </div>
+        </a>
+        <a href="carreras.html" class="item">Carreras</a>
+        <div align="center">
+            <a class="item"><img src="media/TopTec_blanco.png" width="30" height="40" align="middle"> </a>
+        </div>
+    </div><! Menú>
+
+    <div class="ui basic icon top fixed large menu"><!Información>
+        <a id="menup" class="item" data-inverted="" data-tooltip="Explora tu Tec ideal" data-position="bottom left">
+            <i class="sidebar large icon"></i>
+            <p class="menu-text">Menu</p>
+        </a>
+        <div class="item">
+            <img src="media/TopTec_blanco.png" width="50">
+        </div>
+        <div class="right menu">
+            <div class="item">
+                <i class="help large icon"></i><p class="menu-text"> Ayuda </p>
+            </div>
+            <div class="ui dropdown item"  data-inverted="" data-tooltip="Elige el idioma" data-position="bottom right">
+                <i class="icon large world"></i><div class="menu-text"> Lenguaje </div><i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="us flag"></i> English</a>
+                    <a class="item"><i class="mx flag"></i>Spanish</a>
+                </div>
+            </div>
+        </div>
+    </div><!Barra superior>
+    <p><br><br></p>
+    <div class="ui container">
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+        <div class="ui grid">
+            <div class="thirteen wide column"></div>
+            <div class="two wide column">
+                <a class="ui circular icon button" data-tooltip="Regresar" data-position="left center" href="campus-site.html">
+                    <i class="arrow left large icon"></i>
+                </a>
+                <div class="ui hidden vertical divider"></div>
+                <a class="ui circular icon button" data-tooltip="Ir al Inicio" data-position="right center" href="index.html">
+                    <i class="large home icon"></i>
+                </a>
+            </div>
+        </div>
+    </div><!Boton superior>
+
+    <div class="ui masthead vertical segment">
+        <div class="ui container">
+            <div class="introduction">
+                <h1 class="ui header">
+                    Campus Morelia
+                    <div class="sub header">Ciudad Cultural</div>
+                </h1>
+
+                <div class="ui container">
+                    <div class="ui stackable grid">
+                        <div class="row">
+                            <div class="twelve wide column grid">
+                                <div class="ui secondary pointing menu">
+                                    <a class="item" data-tab="Datos">
+                                        Datos
+                                    </a>
+                                    <a class="item active" data-tab="Masa">
+                                        ¿Por qué elegir Morelia?
+                                    </a>
+                                </div>
+                                <div class="ui tab" data-tab="Datos">
+                                    <p>Este campus está ubicado en la comunidad de Jesús del Monte, cerca al conjunto residencial y comercial Altozano.<br>
+                                    Campus Morelia abrió sus puertas en 2002, siendo así la segunda instalación más reciente. Las instalaciones cuentan de aproximadamente una héctarea de construcción, además de muy amplias áreas verdes.
+                                    Es uno de los campus acreditados por la Asociación de Universidades y Escuelas del Sur de Estados Unidos (SACS por sus siglas en inglés).
+                                    <br>No cuenta con incubadora de empresas.
+                                    <hr>Director Actual: Dr Edgar Montalvo Escamilla
+                                    <br>Teléfono de Información: (443)3226800
+                                    </p>
+                                </div>
+                                <div class="ui tab active" data-tab="Masa">
+                                    <p>El Tec de Monterrey campus Morelia es de tamaño pequeño.  Debido a que los alumnos son muy pocos y los grupos están reducidos, los maestros del campus son capces de brindar una mejor atención y realizar sus clases de forma más personalizadas. Otra ventaja del campus de Morelia es que conoces a la mayoría de las personas ya que como normalmente hay un grupo por materia, puede tocarte con compañeros de otras carreras.
+                                     Aunque Morelia no es muy grande es una ciudad muy turística y visitada por su música, su gastronomía y su hermosa arquitectura, además es Patrimonio Cultural de la Humanidad.<br> Vivir en Morelia te da muchas ventajas como que es una cuidad barata, la gente es muy amigable, los lugares para visitar no están tan saturados, es una ciudad tranquila y no es muy nocturna.</p>
+                                    <a class="ui teal image label right floated">
+                                        <img src="media/CMOR/Usuarios/karlaSoto.jpg">
+                                        Karla Soto
+                                        <div class="detail">Estudiante</div>
+                                    </a>
+                                </div>
+
+                                <div class="ui mini statistics">
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="puzzle icon"></i> ?
+                                        </div>
+                                        <div class="label">
+                                            Actividades Extra
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="student icon"></i> 7
+                                        </div>
+                                        <div class="label">
+                                            Carreras completas
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="building icon"></i> 1
+                                        </div>
+                                        <div class="label">
+                                            Edificios
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <img src="media/mascota.jpg" class="ui circular inline image" height="25">
+                                            1700
+                                        </div>
+                                        <div class="label">
+                                            Borregos
+                                        </div>
+                                    </div>
+                                </div><!Estadísticas>
+
+                            </div><! Texto Principal>
+                            <div class="four wide column grid">
+                                <div class="ui right aligned container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.692681992412!2d-101.17152763486872!3d19.65231899361829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ab7fe44853808ec!2sTecnol%C3%B3gico+de+Monterrey!5e0!3m2!1ses-419!2smx!4v1493178003839" width="300" height="250" frameborder="0" style="border-width: 3px; border-color: #0f0f10;border-radius: 3%" allowfullscreen></iframe>
+                                </div>
+                            </div><! Mapa>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui hidden divider"></div>
+    </div><!Sección superior>
+
+
+
+    <!Para agregar imágenes aquí, también debemos modificar la pantalllota>
+    <div class="ui six doubling cards">
+        <a class="red card zoom">
+            <div class="image">
+                <img src="media/CMOR/campus/fotoMini/jardin1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="orange card">
+            <div class="image" >
+                <img src="media/CMOR/campus/fotoMini/instalaciones1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="yellow card">
+            <div class="image">
+                <img src="media/CMOR/campus/fotoMini/comedor.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="olive card">
+            <div class="image">
+                <img src="media/CMOR/campus/fotoMini/alberca.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="green card">
+            <div class="image">
+                <img src="media/CMOR/campus/fotoMini/corredor.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="orange card">
+            <div class="image">
+                <img src="media/CMOR/campus/fotoMini/entrada.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+        </a>
+    </div>
+
+    <p><br><br><br></p>
+    <div class="ui container">
+        <h4 class="ui horizontal divider header">
+            <i class="tag icon"></i>
+            Description
+        </h4>
+
+
+        <div class="ui styled fluid accordion">
+            <div class="title" data-inverted="" data-tooltip="Haz click para ver más">
+                <i class="student icon"></i>
+                Carreras
+            </div>
+            <div class="content">
+                <div class="transition visible" style="display: block !important;">
+                    <div class="ui grid container">
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <a class="ui green horizontal label">IA</a>
+                                    Ingeniero Agrónomo
+                                </div>
+                                <div class="item">
+                                    <div class="ui green horizontal label">IIA</div>
+                                    Ingeniero en Industrias Alimentarias
+                                </div>
+                                <div class="item">
+                                    <div class="ui green horizontal label">IBT</div>
+                                    Ingeniero en Biotecnología
+                                </div>
+                                <div class="item">
+                                    <div class="ui green horizontal label">IQA</div>
+                                    Ingeniero Químico Administrador
+                                </div>
+                                <div class="item">
+                                    <div class="ui green horizontal label">IQP</div>
+                                    Ingeniero Químico en Procesos Sustentables
+                                </div>
+                                <div class="item">
+                                    <div class="ui green horizontal label">IDS</div>
+                                    Ingeniero en Desarrollo Sustentable
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui blue horizontal label">ARQ</div>
+                                    Arquitecto
+                                </div>
+                                <div class="item">
+                                    <div class="ui purple horizontal label">IMD</div>
+                                    Ingeniero Biomédico
+                                </div>
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IIDt</div>
+                                    Ingeniero en Innovación y Desarrollo
+                                </div>
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IC</div>
+                                    Ingeniero Civil
+                                </div>
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IDA</div>
+                                    Ingeniería en Diseño Automotriz
+                                </div>
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IIS</div>
+                                    Ingeniero Industrial y de Sistemas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IMA</div>
+                                    Ingeniería Mecánico Administrador
+                                </div>
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IME</div>
+                                    Ingeniería Mecánico Electricista
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LAEt</div>
+                                    Licenciado en Administración y Estrategia de Negocios
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LAF</div>
+                                    Licenciado en Administración Financiera
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LCDE</div>
+                                    Licenciado en Creación y Desarrollo de Empresas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LCPF</div>
+                                    Licenciado en Contaduría Pública
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LIN</div>
+                                    Licenciado en Negocios Internacionales
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LMC</div>
+                                    Licenciado en Mercadotecnia y Comunicación
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LLN</div>
+                                    Licenciado en Logística Internacional
+                                </div>
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LPO</div>
+                                    Licenciado en Psicología Organizacional
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Certificaciones
+            </div>
+            <div class="content">
+                <div class="transition visible" style="display: block !important;">
+                    <div class="container">
+                        <div class="ui list">
+                            <div class="item">
+                                <div class="header">
+                                    <a class="ui green horizontal label">CIIES</a>Comités Interinstitucionales para la Evaluación de Educación Superior
+                                </div>
+                                <ul class="ui list">
+                                    <li>Licenciado en Administración y Estrategia de Negocios</li>
+                                    <li>Licenciado en Contaduría Pública y Finanzas</li>
+                                    <li>Licenciado en Negocios Internacionales</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div><!Certificaciones>
+
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Actividades
+            </div>
+            <div class="content">
+                <p>Un campus repleto de actividades por descubrir. Es reconocido por su facilidad para abrir actividades nuevas
+                si hay los alumnos necesarios para hacerlo.</p>
+                <div class="transition hidden">
+                    <div class="ui container">
+                        <div class="ui grid ">
+                            <div class="ui eight wide column">
+                                <h2 class="ui header">
+                                    <i class="paint brush icon"></i>
+                                    <div class="content">
+                                        Cultural
+                                        <div class="sub header">Check out our plug-in marketplace</div>
+                                    </div>
+                                </h2>
+                                <ul class="ui list">
+                                    <li>Baile</li>
+                                    <li>Espectáculo Folclórico </li>
+                                    <li>Teatro</li>
+                                    <li>Piano</li>
+                                    <li>Guitarra</li>
+                                    <li>Grupos Estudiantiles</li>
+                                    <li>Staff de Bienvenida</li>
+                                    <li>Mentores</li>
+                                </ul>
+                            </div>
+                            <div class="ui eight wide column">
+                                <h2 class="ui header">
+                                    <i class="soccer icon"></i>
+                                    <div class="content">
+                                        Deportes
+                                        <div class="sub header">Para los amantes de los deportes, estos son las opciones que ofrece el Tec en Querétaro</div>
+                                    </div>
+                                </h2>
+                                <ul class="ui list">
+                                    <li>Futbol Americano</li>
+                                    <li>Basquetbol</li>
+                                    <li>Voleibol</li>
+                                    <li>Atletismo</li>
+                                    <li>Futbol</li>
+                                    <li>Tenis</li>
+                                    <li>Box</li>
+                                    <li>Fitness</li>
+                                    <li>Yoga</li>
+                                    <li>Tochito</li>
+                                    <li>Tae Kwon Do</li>
+                                    <li>Tenis de Mesa</li>
+                                    <li>Cheerleading</li>
+                                    <li>Karate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+
+        <h4 class="ui horizontal divider header">
+            <i class="hand peace icon"></i>
+            ¿Qué hacer cerca del Tec?
+        </h4>
+
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <div class="ui raised segment">
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui red ribbon label">Restaurantes</a>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Sacia el hambre</span>
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Gaspachos EL Boulevard</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/gaspachos.jpeg">
+                                                        Un requisito para decir que se ha estado en Morelia, es haber comido gaspachos. Una tradicional combinación de jugo de naranja con jícama, pepino
+                                                        mango, piña, vinagre, queso y cebolla. Los gaspachos el boulevard te aseguran que cada cucharada de sus productos será una experiencia.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/katara.jpg">
+                                                <a class="header">Plaza Katara</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Experimenta la gastronomía mexicana en un solo lugar. Plaza Katara es un conjunto de negocios de comida mexicana y extranjera, cualquier tipo de antojito lo puedes encontrar aquí.
+                                                        Lo primero que te verás en este lugar será la ambientación, pues todo está construido con madera, cabañas, mesas, suelo, todo es madera. Además está a menos de unkilómetro del campus.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Plaza Stella</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/stella.jpg">
+                                                        Este lugar es reconocible porque está construido con contenedores (de los que se usan en trenes o camiones largos); es un perfecto lugar para botanear y pasar el rato con tus amigos.
+                                                        Puedes encontrar café, Irish Pub's, comida vegetariana, japonesa, hamburguesas, chilaquiles, fitness food, y mucho más.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/mercado.png">
+                                                <a class="header">Mercado Don Lucas</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Es un mercado de reciente apertura, ubicado en el callejón del romance, en el centro histórico de Morelia. Este es un mercado que combina los estilos vintage, orgánico con uno industrial, creando así un
+                                                        lugar perfecto para disfrutar comida y antojitos artesanales. Aquí puedes disfrutar de tu comida de una manera completamente distinta, cambiará tu concepto de mercado.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! restaurantes>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui blue ribbon label">Centros Comerciales</a>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;Compra eso y más</span>
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Paseo Altozano Morelia</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/Paseo-Altozano-3-Small.jpg">
+                                                        Uno de los centros comerciales más grandes de México. Su arquitectura está inspirada en los arcos de Morelia, por lo que podrás ver muchos de ellos en la plaza. Es un lugar agradable para recorrer en un día soleado,
+                                                        pues cuenta con un diseño veraniego que te invita a disfrutar de la naturaleza, y de paso te invita a comprar. Este es el centro comercial que necesitas si lo que quieres es pasar el rato, ir por un café, comprar ropa o llenar tu librero.
+                                                        Los restaurantes aquí son exquisitos y algunos exclusivos en Morelia: UNAGI, IHOP, CaboGrill, Asador Bariloche, Carl's Jr  y otros; además cuenta con una gran área gastronómica par asatisfacer todo tipo de gustos.
+                                                        La vista desde el centro comercial es FENOMENAL, cuenta con numerosos miradores, incluso el cine tiene una sala con mirador.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/americas.jpg">
+                                                <a class="header">Espacio Las Américas</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Es el Shopping Mall más concurrido en Morelia, este es un lugar perfecto para: renovar tu ropa, comprar gadgets, joyería,  música, electrónicos, etc. Además está techado, por lo que puedes estar ahí sin temor del clima.
+                                                        Es el centro comercial con más tiendas exclusivas en la ciudad. Cuenta un Smart Fit para hacer ejecrcicio, un área de restaurantes como Craver's, Don Carbón, Cabo Grill, Irish Pub's, Ittaliannis, Café Europa y Pizza de la Leña; además de un área gastronómica muy diversa, pero siempre repleta de gente.
+                                                        Todo lo que necesites para tu nuevo hogar lo puedes encontrar aquí.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Escala Morelia</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/escala.jpg">
+                                                        Este es el centro comercial predilecto para todos los amantes del cine, amantes de las alitas, boliche, billar y sushi. Aquí puedes encontrar toda variedad de películas, pues tiene el Cinépolis más grande de Morelia, cuenta con salas 4DX, PLUS y MACRO XE.
+                                                        Además de estos anteriores, los lugares más concurridos son Nike Factory Store, Ingeniosz (recomendado si te gustan los objetos inútiles pero bonitos, o los juegos mentales).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/camelinas.jpeg">
+                                                <a class="header">Plaza Fiesta Camelinas</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Aunque es una de las más antiguas en Morelia, sigue siendo una de las principales. Es un lugar reucurrido por todos los que visitan el centro de convenciones de Morelia. En este lugar encontrarás varios cafés y una zona gastronómica muy extensa.
+                                                        Los outlets son frecuentes aquí. También cuenta con un gimnasio muy recomendable en el segundo piso.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! centros comerciales>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui green ribbon label">Super-mercados</a>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;Siempre abastecido
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Walmart</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/walmart.jpg">
+                                                        Este establecimiento no necesita de introducción. Es el lugar más cercano al campus para hacer tu súper. Si aún así no quieres ir, cuentan con servicio a domicilio.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/costco.jpg">
+                                                <a class="header">Costco</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Ubicar el Costco más cercano es una gran necesidad de todo foráneo. Normalmente aquí podrás encontrar tus víveres en grandes volúmenes y aprecios reducidos.
+                                                        Comprar en Costco te permite ahorrar dinero y mucho tiempo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">MEGA</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/mega.JPG">
+                                                        Una muy buena alternativa para comprar productos mexicanos.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! Supermercados>
+
+
+                    </div>
+                </div>
+
+
+                <div class="eight wide column">
+                    <div class="ui raised segment">
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui orange right ribbon label" >Atractivos turísticos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vive de la cultura
+                                </div>
+
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <div class="ui orange header">
+                                                    <p>
+                                                        Morelia es una "Ciudad Patrimonio", recorrer el centro te permite caminar por la historia de México.<br>
+                                                        Son innumerables los sitios turísticos que puedes visitar en la capital de Michoacán, no por nada es la tercer ciudad turística más importante de México.
+                                                        Estos son algunos de los preferidos por los turistas:
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Catedral de Morelia</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/catedral-morelia-2-310x200.jpg">
+                                                        Es un edificio construido en cantera rosa, de estilo barroco. Su construcción inició en 1660 y duró aproximadamente 80 años.
+                                                        Varios historiadores, como SIlvester Baxter la han considerado la más bonita de todas las catedrales mexicanas.
+                                                        Cuenta con un majestuoso órgano, que en su tiempo fue el más grande de América Latina<br>
+                                                        Una curiosidad de la catedral es que a diferencia de todas las del país, está orientada hacia el Este y no hacia el Norte.
+                                                        Todos los sábados podrás apreciar un show noctruno, que inicia a la 20:00 hrs. Cuenta fuegos articiales, música e iluminación.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/acueducto-de-morelia-1.jpg">
+                                                <a class="header">Acueducto</a>
+                                                <div class="description">
+                                                    <p>
+                                                        253 arcos de cantera rosa que se extienden por 1700 metros. Esta construcción sirvió pra transportar agua desde un ojo de agua hasta las fuentes de Morelia.
+                                                        Desde su construcción que era originalmente de 5 km, se ha reducido, y se mantiene solamente como emblema de la ciudad.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Las Tarascas</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/CMOR/lugares/fuente-las-tarascas.jpg">
+                                                        Es un monumento originalmente construido en 1937, fue creada como regalo para el ex-presidente de México, Lázaro Cárdenas del Río; este monumento representaba a tres princesas indígenas cargando fruta, el monumento contaba con color.
+                                                        Debido a que incomodó a varias personas y en especial a la esposa de un gobernador fue retirada y sustituida por otras fuentes.  En 1987 se rehizo la fuente de las Tarascas en bronce, y se colocó en su lugar original.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/sandiego.jpg">
+                                                <a class="header">Calzada de Fray de San Miguel y EL templo de San Diego</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Popularmente conocida como "Calzada de Guadalupe" o "Calzada de San Diego". Inicia deste la fuente de las Tarascas y culmina en la capilla dedicada a la Virgen de Guadalupe, ahora Templo de San Diego.
+                                                        Tenía como fin  comunicar a la ciudad virreinal. Históricamente, este espacio era utilizado para diversas actividades, incluyendo procesiones relacionadas con el culto Guadalupano.
+                                                        El templo de San Diego es considerado como uno de los más bellos del mundo, pues su interior rebosa de detalles con placas de oro.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny right floated image" src="media/CMOR/lugares/Unknown.jpeg">
+                                                <a class="header">Zoológico Benito Juárez</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Es uno de los más importantes del país debido a la gran variedad de especies que posee, 535 especies, así como por su variedad de especímenes, 6200.
+                                                        Es un terreno de 24 hectáreas, en donde hay actualmente 3.5 kilómetros de áreas verdes y juegos infantiles y 4 hectáreas de un lago artificial.
+                                                        Puedes ir en la tarde en compañía de tus amigos, disfrutar de un paseo por el lago y apreciar los animales diurnos, o puedes ir a uno de sus recorridos nocturnos para ver a toda la fauna nocturna.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! atractivos turísticos>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                <div class="title ">
+                                    <a class="ui teal right ribbon label">Bares y Antros</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   &nbsp;&nbsp;Porque la vida es más que estudio
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+                                        <div class="item">
+                                            <div class="content">
+
+                                                <img  class="ui tiny right floated image" src="media/CMOR/lugares/sense.jpg">
+                                                <a class="header">Sense</a>
+
+                                                <div class="description">
+                                                    <p>
+                                                        El antro más grande y concurrido de Morelia. Es un lugar perfecto para desestrezarte. Cuenta con una increíble vista desde las alturas de Morelia, tiene
+                                                        como residentes a grandes DJ que tembién trabajan en la radio.<br>
+                                                        Regularmente cuenta con varios eventos temáticos como Black and White, Noches de Casino, Neon, Ladies (Cada Viernes fin de mes las mujeres entran gratis).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/rotter.jpg">
+                                                <a class="header">Rötter Club</a>
+                                                <div class="description">
+                                                    <p>Un antro ambientado en la industria. Aquí puedes encontrar buena música y barra libre regularmente. Es difícil entrar pero vale la pena la espera.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny right floated image" src="media/CMOR/lugares/porter.JPG">
+                                                <a class="header">Porter British Pub</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Uno de los mejores Pubs de Morelia. Regularmente no está muy lleno y el precio no es muy alto. Estando aquí seguramente quedrás probar las botanas.
+                                                        En este lugar encontrarás la más grande variedad de cervezas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div><! super class>
+                        </div><!bares>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui yellow right ribbon label">Espectáculos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lo mejor para pasar el tiempo
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Cinépolis. La Capital del Cine</a>
+                                                <img  class="ui tiny right floated image" src="media/CMOR/lugares/cinepolis.png">
+                                                <div class="description">
+                                                    <p>Nada como visitar una empresa de origen moreliano en su ciudad natal. Aquí encontrarás una gran variedad de cines: cines coloniales (en el Centro Histórico), de lujo (en Espacio las Américas), especializados (Escala Morelia), etc
+                                                        Gracias a esto Morelia cuenta con el Festival Internacional de Cine de Morelia, que se realiza en Octubre de cada año; en este fectival asisten celebridades, actores, camarógrafos y directores.
+                                                        Cuando vayas al cine en Morelia, debes probar los Doritos con Queso, ya que son un producto que se vende exclusivamente en los cines de la capital michoacana. Ningún otro lugar del mundo los vende.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/CMOR/lugares/estadio-morelos2.jpg">
+                                                <a class="header">Estadio Morelos</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Si te gusta el futbol, Morelia tiene un equipo de primera división que juega constantemente, el Estadio Morelos es su casa. Este lugar se remodela constantemente, y cuenta con asientos cómodos para el público.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny right floated image" src="media/CMOR/lugares/teatro-ocampo-morelia-michoacan.jpg">
+                                                <a class="header">Teatro Melchor Ocampo</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Aunque no es el Teatro más grande, sí es el que tiene una mejor arquitectura y acústica. Este teatro está ubicado en el centro histórico y al igual que todo el centro, está construido con cantera y Madera
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><!entretenimiento>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <h6 class="ui horizontal divider">
+            Participantes de esta edición
+        </h6>
+
+        <div class="ui container">
+            <div align="center">
+                <a class="ui image label">
+                    <img src="media/CMOR/Usuarios/martin.jpg">
+                    Martín Helmut
+                    <div class="detail">Administrador</div>
+                </a>
+                <a class="ui image label">
+                    <img src="media/CMOR/Usuarios/karlaSoto.jpg">
+                    Karla Soto
+                    <div class="detail">Estudiante en Morelia</div>
+                </a>
+                <a class="ui image label">
+                    <img src="media/CMOR/Usuarios/rodo.jpg">
+                    Rodolfo Herrera
+                    <div class="detail">Estudiante de Morelia</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="ui container">
+            <div class="ui dimmable dimmed segment">
+                <div class="ui simple dimmer"></div>
+                <p>  Gracias por visitar nuestro sitio  <p align="center">TOP SECRET</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="media/CMOR/campus/jardin1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="media/CMOR/campus/instalaciones1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="media/CMOR/campus/comedor.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="media/CMOR/campus/alberca.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="media/CMOR/campus/corredor.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="media/CMOR/campus/entrada.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CMOR/campus/MiniMini/jardin1.jpg" onclick="currentSlide(1)" alt="Jardín">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CMOR/campus/MiniMini/instalaciones1.jpg" onclick="currentSlide(2)" alt="Instalaciones Techadas">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CMOR/campus/MiniMini/comedor.jpg" onclick="currentSlide(3)" alt="Comedores dentro del campus">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CMOR/campus/MiniMini/alberca.jpg" onclick="currentSlide(4)" alt="Canchas y Alberca">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CMOR/campus/MiniMini/corredor.jpg" onclick="currentSlide(5)" alt="Único edificio conectado por corredores">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CMOR/campus/MiniMini/entrada.jpg" onclick="currentSlide(6)" alt="Escaleras de entrada">
+            </div>
+        </div>
+    </div><!Pantallota con imagenes>
+
+
+    <footer class="footer-background">
+        <div class="ui centered container">
+            <div class="ui three column grid container">
+                <div class="column">
+                    Legal
+                    <hr>
+                    Las fotografías que se usan en este sitio fueron recuperadas de internet y son de uso exclusivo para este proyecto.
+                </div>
+                <div class="column" align="center">
+                    <br>
+                    <hr>
+                    TopTec © 2017
+                </div>
+                <div class="column">
+                    Equipo
+                    <hr>
+                    <ul>
+                        <li>Martin Helmut Domínguez Alvarez - A01701813
+                        <li>Zayd Arvizu Gil - A01350588
+                        <li>Hugo Arturo Pérez Soní - A01273106
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+    $('#menup').click(function(){
+        $('.ui.sidebar').sidebar('toggle');
+    });
+    $('.ui.dropdown').dropdown();
+    $('.menu .item')
+        .tab()
+    ;
+    $('.ui.accordion')
+        .accordion()
+    ;
+
+</script>
+</body>
+</html>

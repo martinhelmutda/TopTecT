@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Hidalgo</title>
+    <link rel="shortcut icon" href="media/TopTec_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="dist/semantic.css">
+    <script
+            src="dist/jquery-3.2.1.js">
+    </script>
+    <script src="dist/semantic.js"></script>
+    .pusher{
+    margin-top: 70px auto 0;
+    }
+
+</head>
+<body>
+
+    <div class="ui sidebar vertical left inverted menu">
+        <a href="index.html" class="item">Inicio</a>
+        <a href="campus-site.html" class="header item"><i class="grid layout icon"></i>Campus
+            <div class="menu">
+                <a href="queretaro.html" class="item">Campus Querétaro</a>
+                <a href="morelia.html" class="item">Campus Morelia</a>
+                <a href="hidalgo.html" class="active item">Campus Hidalgo</a>
+                <a href="ccm.html" class="item">Campus Ciudad México</a>
+                <a href="guadalajara.html" class="item">Campus Guadalajara</a>
+            </div>
+        </a>
+        <a href="carreras.html" class="item">Carreras</a>
+        <div align="center">
+            <p class="item"><img src="media/TopTec_blanco.png" width="30" height="40" align="middle"> </p>
+        </div>
+    </div><! Menú>
+    <div class="ui basic icon top fixed large menu"><!Información>
+        <a id="menup" class="item" data-inverted="" data-tooltip="Explora tu Tec ideal" data-position="bottom left">
+            <i class="sidebar large icon"></i>
+            <p class="menu-text">Menu</p>
+        </a>
+        <div class="item">
+            <img src="media/TopTec_blanco.png" width="50">
+        </div>
+        <div class="right menu">
+            <div class="item">
+                <i class="help large icon"></i><p class="menu-text"> Ayuda </p>
+            </div>
+            <div class="ui dropdown item"  data-inverted="" data-tooltip="Elige el idioma" data-position="bottom right">
+                <i class="icon large world"></i><div class="menu-text"> Lenguaje </div><i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="us flag"></i> English</a>
+                    <a class="item"><i class="mx flag"></i>Spanish</a>
+                </div>
+            </div>
+        </div>
+    </div><!Barra superior>
+    <p><br><br></p>
+    <div class="ui container">
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+        <div class="ui grid">
+            <div class="thirteen wide column"></div>
+            <div class="two wide column">
+                <a class="ui circular icon button" data-tooltip="Regresar" data-position="left center" href="campus-site.html">
+                    <i class="arrow left large icon"></i>
+                </a>
+                <div class="ui hidden vertical divider"></div>
+                <a class="ui circular icon button" data-tooltip="Ir al Inicio" data-position="right center" href="index.html">
+                    <i class="large home icon"></i>
+                </a>
+            </div>
+        </div>
+    </div><!Boton superior>
+
+    <div class="ui masthead vertical segment">
+        <div class="ui container">
+            <div class="introduction">
+                <h1 class="ui header">
+                    Campus Hidalgo
+                    <div class="sub header">Pachuca, la bella airosa</div>
+                </h1>
+
+                <div class="ui container">
+                    <div class="ui stackable grid">
+                        <div class="row">
+                            <div class="twelve wide column grid">
+                                <div class="ui secondary pointing menu">
+                                    <a class="item" data-tab="Datos">
+                                        Datos
+                                    </a>
+                                    <a class="item active" data-tab="Masa">
+                                        ¿Por qué elegir Hidalgo?
+                                    </a>
+                                </div>
+                                <div class="ui tab" data-tab="Datos">
+                                    <p>Campus fundado en 1980</p>
+                                </div>
+                                <div class="ui tab active" data-tab="Masa">
+                                    <p>El campus es chiquito, lo cual es una desventaja, pero al mismo tiempo es bueno ya que hay buena comunicación con profesores porque lo mismo. Igual por ser pequeño no caminas tanto para llegar a tus clases. El campus tiene buenas instalaciones deportivas, con su respectivos programas de muy buen nivel. Tenemos Santa Clara dentro del campus :D</p>
+                                    <a class="ui teal image label right floated">
+                                        <img src="media/hidalgo/guillermo.jpg">
+                                        Guillermo
+                                        <div class="detail">Estudiante</div>
+                                    </a>
+                                </div>
+
+                                <div class="ui mini statistics">
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="puzzle icon"></i> 15
+                                        </div>
+                                        <div class="label">
+                                            Actividades Extra
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="student icon"></i> 4
+                                        </div>
+                                        <div class="label">
+                                            Carreras completas
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <i class="building icon"></i> 5
+                                        </div>
+                                        <div class="label">
+                                            Edificios
+                                        </div>
+                                    </div>
+                                    <div class="statistic">
+                                        <div class="value">
+                                            <img src="media/mascota.jpg" class="ui circular inline image" height="25">
+                                            1100
+                                        </div>
+                                        <div class="label">
+                                            Borregos
+                                        </div>
+                                    </div>
+                                </div><!Estadísticas>
+
+                            </div><! Texto Principal>
+                            <div class="four wide column grid">
+                                <div class="ui right aligned container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1873.4569193316524!2d-98.76701834197088!3d20.095888296627773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109fefeb83fcd%3A0x5cc17a78baa01ede!2sItesm+Campus+Hidalgo!5e0!3m2!1ses-419!2smx!4v1493181032033" width="300" height="250" frameborder="0" style="border-width: 3px; border-color: #0f0f10;border-radius: 3%" allowfullscreen></iframe>
+                                </div>
+                            </div><! Mapa>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui hidden divider"></div>
+    </div><!Sección superior>
+
+
+
+    <!Para agregar imágenes aquí, también debemos modificar la pantalllota>
+    <div class="ui six doubling cards">
+        <a class="red card zoom">
+            <div class="image">
+                <img src="media/hidalgo/hidalgocit.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="orange card">
+            <div class="image" >
+                <img src="media/hidalgo/dae.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="yellow card">
+            <div class="image">
+                <img src="media/hidalgo/edif2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="olive card">
+            <div class="image">
+                <img src="media/hidalgo/citsanta.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="green card">
+            <div class="image">
+                <img src="media/hidalgo/entrada.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+            </div>
+        </a>
+        <a class="orange card">
+            <div class="image">
+                <img src="media/hidalgo/edif3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+            </div>
+        </a>
+    </div>
+
+    <p><br><br><br></p>
+    <div class="ui container">
+        <h4 class="ui horizontal divider header">
+            <i class="tag icon"></i>
+            Description
+        </h4>
+
+
+        <div class="ui styled fluid accordion">
+            <div class="title" data-inverted="" data-tooltip="Haz click para ver más">
+                <i class="student icon"></i>
+                Carreras
+            </div>
+            <div class="content">
+                <div class="transition visible" style="display: block !important;">
+                    <div class="ui grid container">
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui grey horizontal label">IIS</div>
+                                    Ingeniero Industrial y de Sistemas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LAE</div>
+                                    Licenciado en Administración y Estrategia de Negocios
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui orange horizontal label">LCPF</div>
+                                    Licenciado en Contaduría Pública
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four wide column">
+                            <div class="ui middle aligned animated list">
+                                <div class="item">
+                                    <div class="ui yellow horizontal label">ITIC</div>
+                                    Ingeniero en Tecnologías de Información y Comunicaciones
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Certificaciones
+            </div>
+            <div class="content">
+                <div class="transition visible" style="display: block !important;">
+                    <div class="container">
+                        <div class="ui list">
+                            <div class="item">
+                                <div class="header">
+                                    <a class="ui pink horizontal label">CACEI</a>Consejo de Acreditación de la Enseñanza de la Ingeniería
+                                </div>
+                                <ul class="ui list">
+                                    <li>Ingeniero Industrial y de Sistemas</li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <div class="header">
+                                    <a class="ui blue horizontal label">CACECA</a>Consejo de Acreditación en la Enseñanza de la Contaduría y Administración
+                                </div>
+                                <ul class="ui list">
+                                    <li>Licenciado en Contaduría Pública y Finanzas</li>
+                                    <li>Licenciado en Creación y Desarrollo de Empresas</li>
+                                </ul>
+                            </div>
+
+                            <div class="item">
+                                <div class="header">
+                                    <a class="ui yellow horizontal label">CONAIC</a>Consejo Nacional de Acreditación en Informática y Computación
+                                </div>
+                                <ul class="ui list">
+                                    <li>Ingeniero en Tecnologías de Información y Comunicaciones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!Certificaciones>
+
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Actividades
+            </div>
+            <div class="content">
+                <p>Si te gustan los deportes y actividades culturales, este campus es una gran opción para ti, sus equipos representativos son de muy alta calidad y cada semestre se organizan festivales culturales en los que puedes participar.</p>
+                <div class="transition hidden">
+                    <div class="ui container">
+                        <div class="ui grid ">
+                            <div class="ui eight wide column">
+                                <h2 class="ui header">
+                                    <i class="paint brush icon"></i>
+                                    <div class="content">
+                                        Cultural
+                                        <div class="sub header">Forma parte de la familia COOLtural</div>
+                                    </div>
+                                </h2>
+                                <ul class="ui list">
+                                    <li>Baile</li>
+                                    <li>Teatro</li>
+                                    <li>Ensamble musical</li>
+                                    <li>Teatro musical</li>
+                                    <li>Grupos Estudiantiles</li>
+                                    <li>Staff técnico</li>
+                                </ul>
+                            </div>
+                            <div class="ui eight wide column">
+                                <h2 class="ui header">
+                                    <i class="soccer icon"></i>
+                                    <div class="content">
+                                        Deportes
+                                        <div class="sub header">Porta la playera del Tec Hidalgo en las actividades deportivas</div>
+                                    </div>
+                                </h2>
+                                <ul class="ui list">
+                                    <li>Basquetbol</li>
+                                    <li>Voleibol</li>
+                                    <li>Futbol</li>
+                                    <li>Tenis</li>
+                                    <li>Escalada</li>
+                                    <li>Fitness</li>
+                                    <li>Yoga</li>
+                                    <li>Tenis de Mesa</li>
+                                    <li>Cheerleading</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+        <div class="ui hidden divider"></div>
+
+        <h4 class="ui horizontal divider header">
+            <i class="hand peace icon"></i>
+            ¿Qué hacer cerca del Tec?
+        </h4>
+
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <div class="ui raised segment">
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui red ribbon label">Restaurantes</a>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Sacia el hambre</span>
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Mexican Food</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/mexicanfood.jpg">
+                                                        Localizado en el Centro Minero (A 10 minutos caminando del Tec) Mexican Food es un puesto de comida muy frecuentado por estudiantes. Aquí encontrarás diversos antojitos mexicanos, burritos, tacos, sopes, etc. Son particularmente famosos por sus huaraches.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/hidalgo/lugares/meat.jpg">
+                                                <a class="header">Taco MEAT</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Se encuentra a un costado del Tec, lo cual lo hace muy accesible. Tienen tacos de arrachera, roast beef, chorizo argentino, y algunos otras carnes.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Mister Wilo</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/misterwilo.jpeg">
+                                                        Se encuentra a un costado del Tec, lo cual lo hace muy accesible. Tienen comida de todo tipo, desde cosas como hamburguezas o hotdogs, hasta cosas tradicionales hidalguenses como las tulancingueñas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! restaurantes>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui blue ribbon label">Centros Comerciales</a>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;Compra eso y más</span>
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Galerías Pachuca</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/galerias.jpg">
+                                                        Localizado en frente del Tec se encuentra el centro comercial más grande de la ciudad. Hay todo tipo de tiendas, departamentales, de electronica, ropa, regalos, juguetes, cines, casino, restaurantes y muchas más.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/hidalgo/lugares/granpatio.jpg">
+                                                <a class="header">Gran Patio</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Esta plaza cuenta con restaurantes, cine, tiendas de ropa, etc. Su ventaja respecto a otras es que hay un gimnasio y un supermercado dentro de la plaza.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! centros comerciales>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui green ribbon label">Centros Comerciales</a>
+                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;Siempre abastecido
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Soriana</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/soriana.jpg">
+                                                        Encuentra todo los productos básicos que necesites, justo al lado del campus.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/hidalgo/lugares/cityclub.jpg">
+                                                <a class="header">City Club</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Encuentra todo los productos básicos que necesites. La ventaja es que lo venden a precio de mayoreo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Walmart</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/walmart.jpg">
+                                                        Localizada en la centro comercial Gran Patio. Encuentra una mayor variedad de productos.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! Supermercados>
+
+
+                    </div>
+                </div>
+
+
+                <div class="eight wide column">
+                    <div class="ui raised segment">
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui orange right ribbon label" >Atractivos turísticos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vive de la cultura
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Parque David Ben Gurión</a>
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/bengurion.jpg">
+                                                        En el compuesto David Ben Gurión podrás encontrar diversas actividades. Principalmente atractivo por su famoso pisal el parque cuenta también con el Museo del Futbol, la biblioteca del estado y el auditorio Gota de Plata.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><! atractivos turísticos>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                <div class="title ">
+                                    <a class="ui teal right ribbon label">Bares y Antros</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   &nbsp;&nbsp;Porque la vida es más que estudio
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">La Chopería</a>
+
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/choperia.jpg">
+                                                        Localizado justo a un lado del tec este Bar es una buena opción para juntarse por las tardes con sus amigos. Beber unas cervezas o comer hamburguesas mientras juegas una partida de billar.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny left floated image" src="media/hidalgo/lugares/kanija.jpg">
+                                                <a class="header">La Kanija</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Frecuentado cada semana por muchos es uno de los principales antros de la ciudad.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">
+                                                <img  class="ui tiny right floated image" src="media/hidalgo/lugares/contenedores.jpg">
+                                                <a class="header">Contenedores</a>
+                                                <div class="description">
+                                                    <p>
+                                                        Si tu estilo es un poco mas relajado, en contenedores puedes encontrar bebidas y shishas en un ambiente más silencioso.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div><! super class>
+                        </div><!bares>
+
+                        <div class="ui divider"></div>
+
+                        <div class="container">
+                            <div class="ui fluid accordion">
+                                <div class="title" data-inverted="" data-tooltip="Haz click para ver más" data-position="right center">
+                                    <a class="ui yellow right ribbon label">Espectáculos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lo mejor para pasar el tiempo
+                                </div>
+                                <div class="content">
+                                    <div class="ui relaxed divided list">
+                                        <div class="item">
+                                            <div class="content">
+                                                <a class="header">Auditorio Gota de Plata</a>
+
+                                                <div class="description">
+                                                    <p>
+                                                        <img  class="ui tiny right floated image" src="media/hidalgo/lugares/gotadeplata.jpg">
+                                                        Aquí encontrarás diversos espectaculos y obras de teatro.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui hidden divider"></div>
+                                </div>
+                            </div>
+                        </div><!entretenimiento>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <h6 class="ui horizontal divider">
+            Participantes de esta edición
+        </h6>
+
+        <div class="ui container">
+            <div align="center">
+                <a class="ui image label">
+                    <img src="media/hugo.jpg">
+                    Hugo
+                    <div class="detail">Amigo</div>
+                </a>
+                <a class="ui image label">
+                    <img src="media/hidalgo/guillermo.jpg">
+                    Guillermo
+                    <div class="detail">Estudiante</div>
+                </a>
+                <a class="ui image label">
+                    <img src="media/hidalgo/emilio.jpg">
+                    Emilio
+                    <div class="detail">Estudiante</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="ui container">
+            <div class="ui dimmable dimmed segment">
+                <div class="ui simple dimmer"></div>
+                <p></p>
+                <p align="center">TOP SECRET</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="media/hidalgo/hidalgocit.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="media/hidalgo/dae.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="media/hidalgo/edif2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="media/hidalgo/citsanta.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="media/hidalgo/entrada.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="media/hidalgo/edif3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CQ/fotos/minimini/edificio.jpg" onclick="currentSlide(1)" alt="CIT">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CQ/fotos/minimini/arqui.JPG" onclick="currentSlide(2)" alt="DAE">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CQ/fotos/minimini/jardis.jpg" onclick="currentSlide(3)" alt="Aulas II">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CQ/fotos/minimini/plaza_roja.jpg" onclick="currentSlide(4)" alt="Explanada Santa Clara">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CQ/fotos/minimini/arboles.JPG" onclick="currentSlide(5)" alt="Entrada">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="media/CQ/fotos/minimini/alberca.jpg" onclick="currentSlide(6)" alt="Áulas III">
+            </div>
+        </div>
+    </div><!Pantallota con imagenes>
+
+
+    <footer class="footer-background">
+        <div class="ui three column grid container">
+            <div class="column">
+                Legal
+                <hr>
+                Las fotografías que se usan en este sitio fueron recuperadas de internet y son de uso exclusivo para este proyecto.
+            </div>
+            <div class="column" align="center">
+                <br>
+                <hr>
+                TopTec © 2017
+            </div>
+            <div class="column">
+                Equipo
+                <hr>
+                <ul>
+                    <li>Martin Helmut Domínguez Alvarez - A01701813
+                    <li>Zayd Arvizu Gil - A01350588
+                    <li>Hugo Arturo Pérez Soní - A01273106
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script>
+    $('#menup').click(function(){
+        $('.ui.sidebar').sidebar('toggle');
+    });
+    $('.ui.dropdown').dropdown();
+    $('.menu .item')
+        .tab()
+    ;
+    $('.ui.accordion')
+        .accordion()
+    ;
+
+</script>
+</body>
+</html>

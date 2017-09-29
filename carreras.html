@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>TopTec</title>
+        <link rel="shortcut icon" href="media/TopTec_icon.png"/>
+        <link rel="stylesheet" type="text/css" href="dist/semantic.css">
+        <script
+                src="dist/jquery-3.2.1.js">
+        </script>
+        <script src="dist/semantic.js"></script>
+        .pusher{
+        margin: 70px auto 0;
+        }
+    </head>
+    <body>
+        <!Aquí es para indicar el movimiento y ubicación del Menú>
+        <div class="ui sidebar vertical left inverted menu">
+            <a href="index.html" class="item">Inicio</a>
+            <a href="campus-site.html" class="item"><i class="grid layout icon"></i>Campus</a>
+            <div class="menu">
+                <a href="queretaro.html" class="item">Campus Querétaro</a>
+                <a href="morelia.html" class="item">Campus Morelia</a>
+                <a href="hidalgo.html" class="item">Campus Hidalgo</a>
+                <a href="ccm.html" class="item">Campus Ciudad México</a>
+                <a href="guadalajara.html" class="item">Campus Guadalajara</a>
+            </div>
+            <a href="carreras.html" class="item">Carreras</a>
+            <div align="center">
+                <p class="item"><img src="media/TopTec_blanco.png" width="30" height="40" align="middle"> </p>
+            </div>
+        </div>
+        <div class="ui basic icon top fixed large menu"><!Información>
+            <a id="menup" class="item" data-inverted="" data-tooltip="Explora tu Tec ideal" data-position="bottom left">
+                <i class="sidebar large icon"></i>
+                <p class="menu-text">Menu</p>
+            </a>
+            <div class="item">
+                <img src="media/TopTec_blanco.png" width="50">
+            </div>
+            <div class="right menu">
+                <div class="item">
+                    <i class="help large icon"></i><p class="menu-text"> Ayuda </p>
+                </div>
+                <div class="ui dropdown item"  data-inverted="" data-tooltip="Elige el idioma" data-position="bottom right">
+                    <i class="icon large world"></i><div class="menu-text"> Lenguaje </div><i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item"><i class="us flag"></i>English</a>
+                        <a class="item"><i class="mx flag"></i>Spanish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <br><h1 align="center">Carreras</h1>
+            <div class="ui segment">
+
+                <div class="ui four stackable cards"><br>
+                    <div class="ui special centered cards">
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="iid">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/iid.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Innovación y Desarrollo</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modaliid">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Innovación y Desarrollo
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Aguascalientes</li>
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <a href="hidalgo.html"><li>Campus Hidalgo</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Saltillo</li>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Tampico</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okiid">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ic">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ic.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Civil</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalic">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Civil
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okic">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ida">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ida.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Diseño Automotriz </p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalida">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Diseño Automotriz 
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okida">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="iis">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/iis.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Industrial y de Sistemas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modaliis">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Industrial y de Sistemas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Aguascalientes</li>
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <a href="hidalgo.html"><li>Campus Hidalgo</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Saltillo</li>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sinaloa</li>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Tampico</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okiis">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ima">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ima.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Mecánico Administrador</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalima">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Mecánico Administrador
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okima">OK</div>
+                            </div>
+                        </div>
+                        
+                       <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ime">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ime.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Mecánico Electricista</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalime">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Mecánico Electricista
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okime">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="imt">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/imt.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Mecatrónica</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalimt">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Mecatrónica
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Aguascalientes</li>
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Saltillo</li>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Tampico</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okimt">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ifi">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ifi.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Físico Industrial</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalifi">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Físico Industrial
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okifi">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="imi">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/imi.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Producción Musical Digital</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalimi">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Producción Musical Digital
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <li>Campus Santa Fe</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okimi">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="iti">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/iti.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Tecnologías de Información</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modaliti">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Tecnologías de Información
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <a href="hidalgo.html"><li>Campus Hidalgo</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Tampico</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="okiti">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="int">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/int.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Negocios y Tecnologías de Información</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalint">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Negocios y Tecnologías de Información
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus San Luis Potosí</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="okint">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="isc">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/isc.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Sistemas Computacionales</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalisc">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Sistemas Computacionales
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okisc">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="isd">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/isd.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Sistemas Digitales y Robótica</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalisd">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Sistemas Digitales y Robótica
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okisd">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="itc">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/itc.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Tecnologías Computacionales</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalitc">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Tecnologías Computacionales
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <li>Campus Santa Fe</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okitc">OK</div>
+                            </div>
+                        </div>
+                        
+                       <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ite">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ite.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Tecnologías Electrónicas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalite">
+                            <i class="close icon"></i>
+                            <div class="header">
+                               Ingeniero en Tecnologías Electrónicas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okite">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="its">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/its.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Telecomunicaciones y Sistemas Electrónicos</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalits">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Telecomunicaciones y Sistemas Electrónicos
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okits">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ibt">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ibt.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Biotecnología</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalibt">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Biotecnología
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okibt">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ia">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ia.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Agrónomol</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalia">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Agrónomo
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okia">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ibn">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ibn.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Bionegocios</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalibn">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Bionegocios
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Laguna</li>
+                                    <li>Campus Sinaloa</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okibn">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ids">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ids.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Desarrollo Sustentable</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalids">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Desarrollo Sustentable
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <li>Campus Santa Fe</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okids">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="iia">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/iia.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Industrias Alimentarias</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modaliia">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Industrias Alimentarias 
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okiia">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="incq">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/incq.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero en Nonotecnología y Ciencias</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalincq">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero en Nonotecnología y Ciencias
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okincq">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="iqa">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/iqa.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Químico Administrador</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modaliqa">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Químico Administrador
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okiqa">OK</div>
+                            </div>
+                        </div>
+                        
+                       <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="iqp">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/iqp.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Químico en Procesos Sustentables</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modaliqp">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Químico en Procesos Sustentables
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okiqp">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="arq">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/arq.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Arquitecto</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalarq">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Arquitecto
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okarq">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lbc">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lbc.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Biociencias</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallbc">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Biociencias 
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklbc">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="imd">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/imd.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Ingeniero Biomédico</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalimd">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Ingeniero Biomédico
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okimd">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lnb">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lnb.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciadoen Nutrición y Bienestar Integral</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallnb">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Nutrición y Bienestar Integral 
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklnb">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lps">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lps.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Psicología clínica y de la Salud</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallps">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Psicología clínica y de la Salud
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklps">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="mc">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/mc.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Médico Cirujano</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalmc">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Médico Cirujano 
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okmc">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="mo">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/mo.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Médico Cirujano Odontólogo</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalmo">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Médico Cirujano Odontólogo
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okmo">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lcmd">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lcmd.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Comunicación y Medios Digitales</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallcmd">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Comunicación y Medios Digitales
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklcmd">OK</div>
+                            </div>
+                        </div>
+                        
+                       <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lad">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lad.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Animación y Arte Digital</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallad">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Animación y Arte Digital
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklad">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lpm">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lpm.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Publicidad y Comunicación de Mercados</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallpm">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Publicidad y Comunicación de Mercados
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklpm">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ldi">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ldi.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Diseño Industrial</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalldi">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Diseño Industrial
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="okldi">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lae">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lae.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Administración y Estrategia de Negocios</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallae">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Administración y Estrategia de Negocios
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Aguascalientes</li>
+                                    <li>Campus Central de Veracruz</li>
+                                    <li>Campus Chiapas</li>
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Ciudad Juarez</li>
+                                    <li>Campus Ciudad Obregón</li>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <a href="hidalgo.html"><li>Campus Hidalgo</li></a>
+                                    <li>Campus Irapuato</li>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Saltillo</li>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sinaloa</li>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Tampico</li>
+                                    <li>Campus Toluca</li>
+                                    <li>Campus Zacatecas</li>
+                                </div>
+                            </div>    
+                            <div class="actions">
+                                <div class="ui button" id="oklae">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="laf">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/laf.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Administración Financiera</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallaf">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Administración Financiera
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sinaloa</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklaf">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lcpf">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lcpf.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Contaduría Pública y Finanzas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallcpf">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Contaduría Pública y Finanzas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                     <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <a href="hidalgo.html"><li>Campus Hidalgo</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklcpf">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lcde">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lcde.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licencido en Creación y Desarrollo de Empresas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallcde">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licencido en Creación y Desarrollo de Empresas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklcde">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lln">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lln.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Logística Internacional</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallln">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Logística Internacional
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklln">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lem">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lem.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Logística Internacional</p>
+                            </div>
+                        </div>
+                        
+                        <div class="ui modal" id="modallem">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Mercadotecnia
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklem">OK</div>
+                            </div>
+                        </div>
+                        
+                       <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lmc">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lmc.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Mercadotecnia y Comunicación</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallmc">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Mercadotecnia y Comunicación
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Aguascalientes</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sinaloa</li>
+                                    <li>Campus Sonora</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklmc">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lin">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lin.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Negocios Internacionales</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallin">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Negocios Internacionales
+                            </div>
+                            <div class="image content">
+                                <div class="content">
+                                <div class="description">
+                                    <li>Campus Aguascalientes</li>
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Cuernavaca</li>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Laguna</li>
+                                    <li>Campus León</li>
+                                    <li>Campus Monterrey</li>
+                                    <a href="morelia.html"><li>Campus Morelia</li></a>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Saltillo</li>
+                                    <li>Campus San Luis Potosí</li>
+                                    <li>Campus Santa Fe</li>
+                                    <li>Campus Sinaloa</li>
+                                    <li>Campus Sonora</li>
+                                    <li>Campus Tampico</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklin">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lpo">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lpo.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Psicología Organizacional</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallpo">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Psicología Organizacional
+                            </div>
+                            <div class="image content">
+                                <div class="description">
+                                    <li>Campus Querétaro</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklpo">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lts">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lts.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Transformación Social</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallts">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Transformación Social
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklts">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lpl">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lpl.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Ciencia Política</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallpl">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Ciencia Política
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklpl">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="led">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/led.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Derecho</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalled">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Derecho
+                            </div>
+                            <div class="content">
+                                <div class="description">>
+                                    <li>Campus Chihuahua</li>
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <li>Campus Toluca</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="okled">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ldp">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ldp.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Derecho y Ciencia Política</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalldp">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Derecho y Ciencia Política 
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Puebla</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="okldp">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="ldf">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/ldf.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Derecho y Finanzas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modalldf">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Derecho y Finanzas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="okldf">OK</div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lec">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lec.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Economía</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallec">
+                            <i class="close icon"></i>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div> 
+                            <div class="image content">
+                                <div class="description">
+                                    <li>Campus Querétaro</li>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div class="ui button" id="oklec">OK</div>
+                            </div>
+                        </div>
+                        
+                       <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lef">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lef.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Economía y Finanzas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallef">
+                            <i class="close icon"></i>
+                            <div class="header">
+                               Licenciado en Economía y Finanzas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <li>Campus Puebla</li>
+                                    <li>Campus Santa Fe</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklef">OK</div>
+                            </div>
+                        </div>   
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lle">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lle.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Letras Hispánicas</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallle">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Letras Hispánicas
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="okllle">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lmi">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lmi.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Periodismo y Medios de Información</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallmi">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Periodismo y Medios de Información
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <li>Campus Monterrey</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklmi">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lp">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lp.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licencido en Psicología</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallp">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licencido en Psicología
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklp">OK</div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <div class="ui primary button" id="lri">Encuentra Campus</div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <img src="media/carreras/lri.png">
+                            </div>
+                            <div class="content">
+                                <p class="header">Licenciado en Relaciones Internacionales</p>
+                            </div>
+                        </div>
+                        <div class="ui modal" id="modallri">
+                            <i class="close icon"></i>
+                            <div class="header">
+                                Licenciado en Relaciones Internacionales
+                            </div>
+                            <div class="content">
+                                <div class="description">
+                                    <a href="ccm.html"><li>Campus Ciudad de México</li></a>
+                                    <li>Campus Estado de México</li>
+                                    <a href="guadalajara.html"><li>Campus Guadalajara</li></a>
+                                    <li>Campus Monterrey</li>
+                                    <li>Campus Puebla</li>
+                                    <a href="queretaro.html"><li>Campus Querétaro</li></a>
+                                    <li>Campus Santa Fe</li>
+                                </div>
+                            </div> 
+                            <div class="actions">
+                                <div class="ui button" id="oklri">OK</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div><br>
+            </div><br>
+        </div>
+    <script>
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+        $('#menup').click(function(){
+            $('.ui.sidebar').sidebar('toggle');
+        });
+        $('.ui.rating').rating();
+        $('.ui.dropdown').dropdown();
+        
+        
+        $('#iid').click(function(){
+            $('#modaliid').modal('show');
+        });
+        $('#okiid').click(function(){
+            $('#modaliid').modal('hide');
+        });
+        
+        $('#ic').click(function(){
+            $('#modalic').modal('show');
+        });
+        $('#okic').click(function(){
+            $('#modalic').modal('hide');
+        });
+        
+        $('#ida').click(function(){
+            $('#modalida').modal('show');
+        });
+        $('#okida').click(function(){
+            $('#modalida').modal('hide');
+        });
+        
+        $('#iis').click(function(){
+            $('#modaliis').modal('show');
+        });
+        $('#okiis').click(function(){
+            $('#modaliis').modal('hide');
+        });
+        
+        $('#ima').click(function(){
+            $('#modalima').modal('show');
+        });
+        $('#okima').click(function(){
+            $('#modalima').modal('hide');
+        });
+        
+        $('#ime').click(function(){
+            $('#modalime').modal('show');
+        });
+        $('#okime').click(function(){
+            $('#modalime').modal('hide');
+        });
+        
+        $('#imt').click(function(){
+            $('#modalimt').modal('show');
+        });
+        $('#okimt').click(function(){
+            $('#modalimt').modal('hide');
+        });
+        
+        $('#ifi').click(function(){
+            $('#modalifi').modal('show');
+        });
+        $('#okifi').click(function(){
+            $('#modalifi').modal('hide');
+        });
+        
+        $('#imi').click(function(){
+            $('#modalimi').modal('show');
+        });
+        $('#okimi').click(function(){
+            $('#modalimi').modal('hide');
+        });
+        
+        $('#iti').click(function(){
+            $('#modaliti').modal('show');
+        });
+        $('#okiti').click(function(){
+            $('#modaliti').modal('hide');
+        });
+        
+        $('#int').click(function(){
+            $('#modalint').modal('show');
+        });
+        $('#okint').click(function(){
+            $('#modalint').modal('hide');
+        });
+        
+        $('#isc').click(function(){
+            $('#modalisc').modal('show');
+        });
+        $('#okisc').click(function(){
+            $('#modalisc').modal('hide');
+        });
+        
+        $('#isd').click(function(){
+            $('#modalisd').modal('show');
+        });
+        $('#okisd').click(function(){
+            $('#modaisd').modal('hide');
+        });
+        
+        $('#itc').click(function(){
+            $('#modalitc').modal('show');
+        });
+        $('#okitc').click(function(){
+            $('#modalitc').modal('hide');
+        });
+        
+        $('#ite').click(function(){
+            $('#modalite').modal('show');
+        });
+        $('#okite').click(function(){
+            $('#modalite').modal('hide');
+        });
+        
+        $('#ite').click(function(){
+            $('#modalite').modal('show');
+        });
+        $('#okite').click(function(){
+            $('#modalite').modal('hide');
+        });
+        
+        $('#its').click(function(){
+            $('#modalits').modal('show');
+        });
+        $('#okits').click(function(){
+            $('#modalits').modal('hide');
+        });
+        
+        $('#ibt').click(function(){
+            $('#modalibt').modal('show');
+        });
+        $('#okibt').click(function(){
+            $('#modalibt').modal('hide');
+        });
+        
+        $('#ia').click(function(){
+            $('#modalia').modal('show');
+        });
+        $('#okia').click(function(){
+            $('#modalia').modal('hide');
+        });
+        
+        $('#ibn').click(function(){
+            $('#modalibn').modal('show');
+        });
+        $('#okibn').click(function(){
+            $('#modalibn').modal('hide');
+        });
+        
+        $('#ids').click(function(){
+            $('#modalids').modal('show');
+        });
+        $('#okids').click(function(){
+            $('#modalids').modal('hide');
+        });
+        
+        $('#iia').click(function(){
+            $('#modaliia').modal('show');
+        });
+        $('#okiia').click(function(){
+            $('#modaliia').modal('hide');
+        });
+        
+        $('#incq').click(function(){
+            $('#modalincq').modal('show');
+        });
+        $('#okincq').click(function(){
+            $('#modalincq').modal('hide');
+        });
+        
+        $('#iqa').click(function(){
+            $('#modaliqa').modal('show');
+        });
+        $('#okiqa').click(function(){
+            $('#modaliqa').modal('hide');
+        });
+        
+        $('#iqp').click(function(){
+            $('#modaliqp').modal('show');
+        });
+        $('#okiqp').click(function(){
+            $('#modaliqp').modal('hide');
+        });
+        
+        $('#arq').click(function(){
+            $('#modalarq').modal('show');
+        });
+        $('#okarq').click(function(){
+            $('#modalarq').modal('hide');
+        });
+        
+        $('#lbc').click(function(){
+            $('#modallbc').modal('show');
+        });
+        $('#oklbc').click(function(){
+            $('#modallbc').modal('hide');
+        });
+        
+        $('#imd').click(function(){
+            $('#modalimd').modal('show');
+        });
+        $('#okimd').click(function(){
+            $('#modalimd').modal('hide');
+        });
+        
+        $('#lnb').click(function(){
+            $('#modallnb').modal('show');
+        });
+        $('#oklnb').click(function(){
+            $('#modallnb').modal('hide');
+        });
+        
+        $('#lps').click(function(){
+            $('#modallps').modal('show');
+        });
+        $('#oklps').click(function(){
+            $('#modallps').modal('hide');
+        });
+        
+        $('#mc').click(function(){
+            $('#modalmc').modal('show');
+        });
+        $('#okmc').click(function(){
+            $('#modalmc').modal('hide');
+        });
+        
+        $('#mo').click(function(){
+            $('#modalmo').modal('show');
+        });
+        $('#okmo').click(function(){
+            $('#modalmo').modal('hide');
+        });
+        
+        $('#lcmd').click(function(){
+            $('#modallcmd').modal('show');
+        });
+        $('#oklcmd').click(function(){
+            $('#modallcmd').modal('hide');
+        });
+        
+        $('#lad').click(function(){
+            $('#modallad').modal('show');
+        });
+        $('#oklad').click(function(){
+            $('#modallad').modal('hide');
+        });
+        
+        $('#lpm').click(function(){
+            $('#modallpm').modal('show');
+        });
+        $('#oklpm').click(function(){
+            $('#modallpm').modal('hide');
+        });
+        
+        $('#ldi').click(function(){
+            $('#modalldi').modal('show');
+        });
+        $('#okldi').click(function(){
+            $('#modalldi').modal('hide');
+        });
+        
+        $('#lae').click(function(){
+            $('#modallae').modal('show');
+        });
+        $('#oklae').click(function(){
+            $('#modallae').modal('hide');
+        });
+        
+        $('#laf').click(function(){
+            $('#modallaf').modal('show');
+        });
+        $('#oklaf').click(function(){
+            $('#modallaf').modal('hide');
+        });
+        
+        $('#lcpf').click(function(){
+            $('#modallcpf').modal('show');
+        });
+        $('#oklcpf').click(function(){
+            $('#modallcpf').modal('hide');
+        });
+        
+        $('#lcde').click(function(){
+            $('#modallcde').modal('show');
+        });
+        $('#oklcde').click(function(){
+            $('#modallcde').modal('hide');
+        });
+        
+        $('#lln').click(function(){
+            $('#modallln').modal('show');
+        });
+        $('#oklln').click(function(){
+            $('#modallln').modal('hide');
+        });
+        
+        $('#lem').click(function(){
+            $('#modallem').modal('show');
+        });
+        $('#oklem').click(function(){
+            $('#modallem').modal('hide');
+        });
+        
+        $('#lmc').click(function(){
+            $('#modallmc').modal('show');
+        });
+        $('#oklmc').click(function(){
+            $('#modallmc').modal('hide');
+        });
+        
+        $('#lin').click(function(){
+            $('#modallin').modal('show');
+        });
+        $('#oklin').click(function(){
+            $('#modallin').modal('hide');
+        });
+        
+        $('#lpo').click(function(){
+            $('#modallpo').modal('show');
+        });
+        $('#oklpo').click(function(){
+            $('#modallpo').modal('hide');
+        });
+        
+        $('#lts').click(function(){
+            $('#modallts').modal('show');
+        });
+        $('#oklts').click(function(){
+            $('#modallts').modal('hide');
+        });
+        
+        $('#lpl').click(function(){
+            $('#modallpl').modal('show');
+        });
+        $('#oklpl').click(function(){
+            $('#modallpl').modal('hide');
+        });
+        
+        $('#led').click(function(){
+            $('#modalled').modal('show');
+        });
+        $('#okled').click(function(){
+            $('#modalled').modal('hide');
+        });
+        
+        $('#ldp').click(function(){
+            $('#modalldp').modal('show');
+        });
+        $('#okldp').click(function(){
+            $('#modalldp').modal('hide');
+        });
+        
+        $('#ldf').click(function(){
+            $('#modalldf').modal('show');
+        });
+        $('#okldf').click(function(){
+            $('#modalldf').modal('hide');
+        });
+        
+        $('#lec').click(function(){
+            $('#modallec').modal('show');
+        });
+        $('#oklec').click(function(){
+            $('#modallec').modal('hide');
+        });
+        
+        $('#lef').click(function(){
+            $('#modallef').modal('show');
+        });
+        $('#oklef').click(function(){
+            $('#modallef').modal('hide');
+        });
+        
+        $('#lle').click(function(){
+            $('#modallle').modal('show');
+        });
+        $('#oklle').click(function(){
+            $('#modallle').modal('hide');
+        });
+        
+        $('#lmi').click(function(){
+            $('#modallmi').modal('show');
+        });
+        $('#oklmi').click(function(){
+            $('#modallmi').modal('hide');
+        });
+        
+        $('#lp').click(function(){
+            $('#modallp').modal('show');
+        });
+        $('#oklp').click(function(){
+            $('#modallp').modal('hide');
+        });
+        
+        $('#lri').click(function(){
+            $('#modallri').modal('show');
+        });
+        $('#oklri').click(function(){
+            $('#modallri').modal('hide');
+        });
+    </script>
+    </body>
+    <footer class="footer-background">
+        <div class="ui centered container">
+            <div class="ui three column grid container">
+                <div class="column">
+                    Legal
+                    <hr>
+                    Las fotografías que se usan en este sitio fueron recuperadas de internet y son de uso exclusivo para este proyecto.
+                </div>
+                <div class="column" align="center">
+                    <br>
+                    <hr>
+                    TopTec © 2017
+                </div>
+                <div class="column">
+                    Equipo
+                    <hr>
+                    <ul>
+                        <li>Martin Helmut Domínguez Alvarez - A01701813
+                        <li>Zayd Arvizu Gil - A01350588
+                        <li>Hugo Arturo Pérez Soní - A01273106
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>TopTec</title>
+        <link rel="shortcut icon" href="media/TopTec_icon.png"/>
+        <link rel="stylesheet" type="text/css" href="dist/semantic.css">
+        <script
+                src="dist/jquery-3.2.1.js">
+        </script>
+        <script src="dist/semantic.js"></script>
+        .pusher{
+        margin: 70px auto 0;
+        }
+    </head>
+    <body>
+        <!Aquí es para indicar el movimiento y ubicación del Menú>
+        <div class="ui sidebar vertical left inverted menu">
+            <a href="index.html" class="item">Inicio</a>
+            <a href="campus-site.html" class="item"><i class="grid layout icon"></i>Campus</a>
+            <div class="menu">
+                <a href="queretaro.html" class="item">Campus Querétaro</a>
+                <a href="morelia.html" class="item">Campus Morelia</a>
+                <a href="hidalgo.html" class="item">Campus Hidalgo</a>
+                <a href="ccm.html" class="item">Campus Ciudad México</a>
+                <a href="guadalajara.html" class="item">Campus Guadalajara</a>
+            </div>
+            <a href="carreras.html" class="item">Carreras</a>
+            <div align="center">
+                <p class="item"><img src="media/TopTec_blanco.png" width="30" height="40" align="middle"> </p>
+            </div>
+        </div>
+        <div class="ui basic icon top fixed large menu"><!Información>
+            <a id="menup" class="item" data-inverted="" data-tooltip="Explora tu Tec ideal" data-position="bottom left">
+                <i class="sidebar large icon"></i>
+                <p class="menu-text">Menu</p>
+            </a>
+            <div class="item">
+                <img src="media/TopTec_blanco.png" width="50">
+            </div>
+            <div class="right menu">
+                <div class="item">
+                    <i class="help large icon"></i><p class="menu-text"> Ayuda </p>
+                </div>
+                <div class="ui dropdown item"  data-inverted="" data-tooltip="Elige el idioma" data-position="bottom right">
+                    <i class="icon large world"></i><div class="menu-text"> Lenguaje </div><i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item"><i class="us flag"></i>English</a>
+                        <a class="item"><i class="mx flag"></i>Spanish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <br><h1 align="center">Conoce los campus</h1>
+            <div class="ui segment">
+
+                <div class="ui four stackable cards"><br>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <a href="ccm.html"><div class="ui primary button">Explora Campus</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="media/ccm/CentroEstudiantilCCM.JPG">
+                            </div>
+                            <div class="content">
+                                <a class="header" href="ccm.html">Campus Ciudad de México</a>
+                                <div class="meta">
+                                    <span>Campus fundado en 1973</span>
+                                </div>
+                            </div>
+                            <div class="extra">
+                                Rating:
+                                <div class="ui star rating" data-rating="4"></div>
+                                    <p><i class="users icon"></i>
+                                        7,500 Alumnos</p>   
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <a href="guadalajara.html"><div class="ui primary button">Explora Campus</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="media/guadalajara/guadalajara_entrada.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header" href="guadalajara.html">Campus Guadalajara</a>
+                                <div class="meta">
+                                    <span>Campus fundado en 1980</span>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Rating:
+                                <div class="ui star rating" data-rating="3"></div>
+                                    <p><i class="users icon"></i>
+                                        6,000 Alumnos</p> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <a href="hidalgo.html"><div class="ui primary button"> Explora Campus</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="media//hidalgo/hidalgocit.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header" href="hidalgo.html">Campus Hidalgo</a>
+                                <div class="meta">
+                                    <span>Campus fundado en 1980</span>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Rating:
+                                <div class="ui star rating" data-rating="1"></div>
+                                    <p><i class="users icon"></i>
+                                        1,100 Alumnos</p> 
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <a href="morelia.html"><div class="ui primary button"> Explora Campus</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="media/morelia/morelia1.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header" href="morelia.html">Campus Morelia</a>
+                                <div class="meta">
+                                    <span>Campus fundado en 2002</span>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Rating:
+                                <div class="ui star rating" data-rating="3"></div>
+                                    <p><i class="users icon"></i>
+                                        1,000 Alumnos</p> 
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="blurring dimmable image">
+                                <div class="ui dimmer">
+                                    <div class="content">
+                                        <div class="center">
+                                            <a href="queretaro.html"><div class="ui primary button"> Explora Campus</div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="media/queretaro/mini.jpg">
+                            </div>
+                            <div class="content">
+                                <a class="header" href="queretaro.html">Campus Querétaro</a>
+                                <div class="meta">
+                                    <span>Campus fundado en 1975</span>
+                                </div>
+                            </div>
+                            <div class="extra content">
+                                Rating:
+                                <div class="ui star rating" data-rating="4"></div>
+                                    <p><i class="users icon"></i>
+                                        6,472 Alumnos</p> 
+                            </div>
+                        </div>
+                        
+
+                </div><br>
+            </div><br>
+        </div>
+    <script>
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        });
+        $('#menup').click(function(){
+            $('.ui.sidebar').sidebar('toggle');
+        });
+        $('.ui.rating').rating();
+        $('.ui.dropdown').dropdown();
+    </script>
+    </body>
+    <footer class="footer-background">
+        <div class="ui centered container">
+            <div class="ui three column grid container">
+                <div class="column">
+                    Legal
+                    <hr>
+                    Las fotografías que se usan en este sitio fueron recuperadas de internet y son de uso exclusivo para este proyecto.
+                </div>
+                <div class="column" align="center">
+                    <br>
+                    <hr>
+                    TopTec © 2017
+                </div>
+                <div class="column">
+                    Equipo
+                    <hr>
+                    <ul>
+                        <li>Martin Helmut Domínguez Alvarez - A01701813
+                        <li>Zayd Arvizu Gil - A01350588
+                        <li>Hugo Arturo Pérez Soní - A01273106
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
